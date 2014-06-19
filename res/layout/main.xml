@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/desktop"
+        >
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_weight="0.9"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:id="@+id/addressMain" android:layout_marginTop="32dp" android:layout_marginRight="2dp"
+                android:layout_marginLeft="20dp" android:background="#ffffff" style="@android:style/Widget.EditText"
+                android:hint="@string/putAddress" android:textColor="#151b2c" android:paddingLeft="9dp"
+                android:inputType="textFilter"/>
+        <Button
+                android:layout_weight="0.1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="@string/go"
+                android:id="@+id/buttonGo"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" android:layout_weight="1" android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45dp"
+                  android:gravity="center_horizontal" android:id="@+id/linearLayout">
+        <Button style="?android:attr/buttonStyleSmall" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/main_menu" android:id="@+id/btnMainMenu"
+                android:onClick="toMainMenu"/>
+        <Button style="?android:attr/buttonStyleSmall" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/all_pages" android:id="@+id/btnAllPages"
+                android:onClick="toAllPages"/>
+    </LinearLayout>
+</LinearLayout>
+

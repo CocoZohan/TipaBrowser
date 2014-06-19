@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TipaBrowser</string>
+    <string name="putAddress">Put URL</string>
+    <string name="go">Go</string>
+    <string name="main_menu">♦</string>
+    <string name="all_pages">•••</string>
+</resources>
